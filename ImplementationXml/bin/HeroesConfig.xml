@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+    
+    <!-- Isian Skill -->
+    <bean id="d1" class = "com.teja.model.HeroSkill">
+    	<property name="namaSkill" value="Battle Trance"></property>
+    	<property name="descSkill" value="Cant die and get 10% lifesteal"></property>
+    	<property name="cdSkill" value="45"></property>
+    	<property name="dmgSkill" value="0"></property>
+    	<property name="duraSkill" value="10"></property>
+    </bean>
+    
+    <bean id="d2" class = "com.teja.model.HeroSkill">
+    	<property name="namaSkill" value="Stempade"></property>
+    	<property name="descSkill" value="Demage Reduction 50%"></property>
+    	<property name="cdSkill" value="60"></property>
+    	<property name="dmgSkill" value="50"></property>
+    	<property name="duraSkill" value="5"></property>
+    </bean>
+    
+    <!-- Di DI ke Heroes -->
+    <bean id="h1" class="com.teja.model.Heroes">
+
+			<property name="namaHero" value="Warlord"></property>
+	    	<property name="raceHero" value="Troll"></property>
+	    	<property name="healthHero" value="1500"></property>
+	    	<property name="manaHero" value="500"></property>
+	    	<constructor-arg ref="d1"></constructor-arg> 
+			
+	</bean>
+	
+	<bean id="h2" class="com.teja.model.Heroes">
+
+			<property name="namaHero" value="Centaur"></property>
+	    	<property name="raceHero" value="Beast"></property>
+	    	<property name="healthHero" value="3500"></property>
+	    	<property name="manaHero" value="850"></property>
+	    	<constructor-arg ref="d2"></constructor-arg> 
+			
+	</bean>
+        
+</beans>
