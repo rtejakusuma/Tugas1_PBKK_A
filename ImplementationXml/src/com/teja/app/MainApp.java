@@ -1,9 +1,10 @@
 package com.teja.app;
 
 import org.springframework.context.ApplicationContext;
+
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.teja.model.Heroes;
+import com.teja.model.*;
 
 public class MainApp {
 
