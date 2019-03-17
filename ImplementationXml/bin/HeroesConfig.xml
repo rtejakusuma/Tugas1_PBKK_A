@@ -8,13 +8,13 @@
     <bean id="d1" class = "com.teja.model.DescriptionSkill">
     	<property name="descSkill" value="Troll unleashes a powerful battle trance, that forces you to continuously attack the closest enemy unit within 900 range, prioritizing heroes"></property>
       	<property name="typeSkill" value="Buff"></property>
-    	<property name="effectSkill" value="Damage does not kill you during this mode. Grants you bonus lifesteal, attack speed and movement speed. Applies a Basic Dispel."></property>
+    	<property name="effectSkill" value="Damage does not kill you during this mode. Grants you bonus lifesteal, attack speed and movement speed. Applies a Basic Dispel"></property>
     </bean>   
     
     <bean id="d2" class = "com.teja.model.DescriptionSkill">
     	<property name="descSkill" value="Centaur leads all allies into a vicious charge causing them to move through units at max speed and stop any enemy units they trample"></property>
       	<property name="typeSkill" value="Buff"></property>
-    	<property name="effectSkill" value="Trampled enemies take damage based on Centaur Warrunner's strength. Each enemy can be trampled once."></property>
+    	<property name="effectSkill" value="Trampled enemies take damage based on Centaur Warrunner's strength. Each enemy can be trampled once"></property>
     </bean>    
     
     <!-- Isian Skill -->
