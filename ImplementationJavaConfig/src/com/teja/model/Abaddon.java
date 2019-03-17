@@ -19,7 +19,6 @@ public class Abaddon implements Heroes {
 		this.manaPoint = manaPoint;
 	}
 
-
 	public SkillHero getPower() {
 		return power;
 	}
