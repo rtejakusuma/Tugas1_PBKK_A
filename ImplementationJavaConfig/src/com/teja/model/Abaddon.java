@@ -1,5 +1,7 @@
 package com.teja.model;
 
+import com.teja.model.SkillHero;
+
 public class Abaddon implements Heroes {
 
 	private SkillHero power;

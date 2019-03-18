@@ -10,14 +10,14 @@ public class MainApp {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//Create Container
-		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("Config.class");
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Config.class);
 		
 		//Get Bean
 		Heroes hero1 = context.getBean("Abaddon", Heroes.class);
-		Abaddon aba = (Abaddon)hero1;
+		Abaddon abaddon = (Abaddon)hero1;
 		
 		//Use bean
-		System.out.println("Hero : " + aba.namaHero() + " Skill : " + aba.getPower().getSkill());
+		System.out.println("Hero : " + abaddon.namaHero() + " Skill : " + abaddon.getPower().getSkill());
 		
 		
 		context.close();
